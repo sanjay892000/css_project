@@ -16,24 +16,31 @@
 
 .ludo-clone{
     background: rgba(30, 21, 21, 0.4);
-    height: 600px;
-    width: 600px;
+    height: 760px;
+    width: 760px;
     display: grid;
-    grid-template-columns: repeat(8,auto);
+    grid-template-columns: repeat(8,95px);
 }
 .column{
     display: grid;
-    grid-template-rows: repeat(8,auto);
+    grid-template-rows: repeat(8,95px);
     width: auto;
 }
 .white{
-    background-color: white;
+    background-color: rgba(255, 255, 255);
     color: black;
 }
 .black{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(67, 64, 64);
     color: white;
 }
 .rows{
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.chess-pawn{
+    height: 75px;
 }

@@ -2,7 +2,8 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    word-spacing: 1;
+    line-height: 2;
 }
 
 .myHeader {
@@ -11,6 +12,9 @@
     align-items: center;
     grid-template-columns: 150px 200px auto 150px;
     background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #logo {
@@ -34,7 +38,6 @@
 .itCompany {
     margin-top: 2px;
     height: 400px;
-    width: 100%;
     display: flex;
     align-items: flex-start;
     padding-left: 100px;
@@ -42,33 +45,120 @@
     flex-direction: column;
     background-image: url('./image/it-banner-image.jpg');
     background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .company {
-    width: 45%;
+    width: 47%;
     color: white;
-    font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 2;
 }
 
-.company p {
-    margin: 15px 0px;
+.company h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    position: relative;
 }
 
+.company h1::after {
+    content: " ";
+    position: absolute;
+    height: 4px;
+    width: 90%;
+    background-color: white;
+    top: 60px;
+    left: 0;
+}
+
+.company p {
+    font-size: 20px;
+}
+
+
 .aboutUs {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about-center{
+
+.about-center {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
-.aboutImage{
-    height: 350px;
+.three-card{
+    position: relative;
+}
+
+.aboutImage {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutImage img {
+    height: 400px;
     width: 550px;
-    background-image: url('./image/h-about.png');
+
+}
+
+.aboutText {
+    width: 38%;
+    font-size: 18px;
+}
+
+.absoluteCard {
+    position: absolute;
+    top: 23px;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 450px;
+    width: 300px;
+}
+
+.absoluteCard li{
+    list-style-type: none;
+    background-color: rgb(244,189,1);
+    height: 140px;
+    width: 230px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+.absoluteCard li:hover{
+    background-color: black;
+}
+
+.absoluteCard li a{
+    text-decoration: none;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+
+.font-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
 }
