@@ -33,7 +33,20 @@
 .nav-items li {
     margin: 0px 15px;
     font-weight: 700;
+    cursor: pointer;
+    position: relative;
 }
+
+/* #training::after{
+    height: 200px;
+    width:100px;
+    content: " ";
+    background: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    z-index: 66;
+} */
 
 .itCompany {
     margin-top: 2px;

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./transform.css">
+</head>
+
+<body>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+            <li><a href='/'>Home</a></li>
+            <li><a class='dropdown-arrow'>Animation</a>
+                <ul class='sub-menus'>
+                    <li><a href='/'>Transition</a></li>
+                    <li><a href='./transform.html'>Transform</a></li>
+                </ul>
+            </li>
+            <li><a href='/'>About</a></li>
+            <li><a class='dropdown-arrow' href='/'>Services</a>
+                <ul class='sub-menus'>
+                    <li><a href='/'>Services 1</a></li>
+                    <li><a href='/'>Services 2</a></li>
+                    <li><a href='/'>Services 3</a></li>
+                </ul>
+            </li>
+            <li><a href='/'>Contact Us</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="wrapper">
+        <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Transform
+            </text>
+        </svg>
+    </div>
+    <br><br>
+
+    <ol class="orderclass">
+        <li>Translate</li>
+        <div class="main-page">
+            <div class="trans" id="trans">
+
+            </div>
+            <div class="trans" id="transX">
+
+            </div>
+            <div class="trans" id="transY">
+
+            </div>
+            <div class="trans" id="transZ">
+
+            </div>
+            <div class="trans" id="trans3D">
+
+            </div>
+
+        </div>
+        <li>Scale</li>
+        <div class="main-page">
+            <div class="scale" id="scale">
+
+            </div>
+            <div class="scale" id="scaleX">
+
+            </div>
+            <div class="scale" id="scaleY">
+
+            </div>
+            <div class="scale" id="scaleZ">
+
+            </div>
+            <div class="scale" id="scale3D"></div>
+
+            </div>
+
+        </div>
+
+
+        <li>Rotate</li>
+        <div class="main-page">
+            <div class="rotate" id="rotate">
+
+            </div>
+            <div class="rotate" id="rotateX">
+
+            </div>
+            <div class="rotate" id="rotateY">
+
+            </div>
+            <div class="rotate" id="rotateZ">
+
+            </div>
+            <div class="rotate" id="rotate3D"></div>
+
+            </div>
+
+        </div>
+
+
+        <li>Skew</li>
+        <div class="main-page">
+            <div class="skew" id="skew">
+
+            </div>
+            <div class="skew" id="skewX">
+
+            </div>
+            <div class="skew" id="skewY">
+
+            </div>
+        </div>
+    </ol>
+
+</body>
+
+</html>
