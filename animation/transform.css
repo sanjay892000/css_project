@@ -254,3 +254,38 @@
   *::-webkit-scrollbar-thumb:active {
     background-color: #62A34B;
   }
+
+
+  
+.main-pagez {
+    display: flex;
+    justify-content: space-evenly;
+    perspective: 1000px;
+    margin: 50px 0px;
+
+}
+
+.transitionz{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.boxz{
+    background: linear-gradient(to bottom, #c5f0ff, #ffedff);
+    height: 100%;
+    width: 300px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 3px 3px 5px black;
+    transition: all 0.5s linear;
+}
+
+.boxz:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px black;
+    cursor: pointer;
+}

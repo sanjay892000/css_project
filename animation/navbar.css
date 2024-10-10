@@ -41,7 +41,6 @@ body {
 
 #menu ul {
 	width: 100%;
-	text-align: left;
 	text-align: center;
 }
 
@@ -239,7 +238,7 @@ svg text {
 @keyframes scrolhead {
 	0% {
 		right: -100%;
-		scale: 0.5;
+		scale: 0.1;
 		opacity: 0;
 	}
 
@@ -252,38 +251,160 @@ svg text {
 
 .wrapper {
 	background-color: inherit
-};
+}
+
+;
 
 
 .main-page {
-    display: flex;
-    justify-content: space-evenly;
-    perspective: 1000px;
-    margin: 50px 0px;
+	display: flex;
+	justify-content: space-evenly;
+	perspective: 1000px;
+	margin: 50px 0px;
 
 }
 
-.transition{
-    height: 400px;
-    display: flex;
-    justify-content: space-evenly;
+.transition {
+	height: 400px;
+	display: flex;
+	justify-content: space-evenly;
 }
 
-.box{
-    background: linear-gradient(to bottom, #c5f0ff, #ffedff);
-    height: 100%;
-    width: 300px;
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
-    align-content: center;
-    box-shadow: 3px 3px 5px black;
-    transition: all 0.5s linear;
+.box {
+	background: linear-gradient(to bottom, #c5f0ff, #ffedff);
+	height: 100%;
+	width: 300px;
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	align-content: center;
+	box-shadow: 3px 3px 5px black;
+	transition: all 0.1s linear;
 }
 
-.box:hover{
-    transform: scale(1.05);
-    box-shadow: 10px 10px 10px black;
-    cursor: pointer;
+.box:hover {
+	transform: scale(1.05);
+	box-shadow: 10px 10px 10px black;
+	cursor: pointer;
 }
 
+section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+button{
+	width: 150px;
+	height: 60px;
+	margin: 30px;
+	background-color: #ece2e2;
+	font-size: 22px;
+}
+
+.animation {
+	height: 150px;
+	width: 150px;
+	background-color: red;
+	margin: 20px;
+	position: relative;
+	animation: move infinite 5s linear;
+}
+
+@keyframes move {
+	0% {
+		background-color: red;
+		left: 0px;
+		top: 0px;
+	}
+
+	25% {
+		background-color: yellow;
+		left: 50%;
+		top: 0px;
+	}
+
+	50% {
+		background-color: blue;
+		left: 50%;
+		top: 50%;
+	}
+
+	75% {
+		background-color: green;
+		left: 0px;
+		top: 50%;
+	}
+
+	100% {
+		background-color: red;
+		left: 0px;
+		top: 0px;
+	}
+}
+
+.search {
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.search div {
+	height: 130px;
+	width: 10px;
+
+}
+
+#search1 {
+	background-color: red;
+    animation: scale1 infinite 1s linear;
+}
+
+#search2 {
+	background-color: green;
+	animation: scale2 infinite 1s linear 0.1s;
+}
+
+#search3 {
+	background-color: blue;
+	animation: scale3 infinite 1s linear 0.2s;
+}
+
+#search4 {
+	background-color: yellow;
+	animation: scale4 infinite 1s linear 0.3s;
+}
+
+#search5 {
+	background-color: crimson;
+	animation: scale5 infinite 1s linear 0.4s;
+}
+
+@keyframes scale1 {
+    0% { transform: scale(0.1); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.1); }
+}
+@keyframes scale2 {
+    0% { transform: scale(0.1); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.1); }
+}
+@keyframes scale3 {
+    0% { transform: scale(0.1); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.1); }
+}
+@keyframes scale4 {
+    0% { transform: scale(0.1); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.1); }
+}
+@keyframes scale5 {
+    0% { transform: scale(0.1); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.1); }
+}
