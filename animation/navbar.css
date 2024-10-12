@@ -295,7 +295,8 @@ section {
 	justify-content: space-between;
 	align-items: center;
 }
-button{
+
+button {
 	width: 150px;
 	height: 60px;
 	margin: 30px;
@@ -360,7 +361,7 @@ button{
 
 #search1 {
 	background-color: red;
-    animation: scale1 infinite 1s linear;
+	animation: scale1 infinite 1s linear;
 }
 
 #search2 {
@@ -384,27 +385,132 @@ button{
 }
 
 @keyframes scale1 {
-    0% { transform: scale(0.1); }
-    50% { transform: scale(1); }
-    100% { transform: scale(0.1); }
+	0% {
+		transform: scale(0.1);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.1);
+	}
 }
+
 @keyframes scale2 {
-    0% { transform: scale(0.1); }
-    50% { transform: scale(1); }
-    100% { transform: scale(0.1); }
+	0% {
+		transform: scale(0.1);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.1);
+	}
 }
+
 @keyframes scale3 {
-    0% { transform: scale(0.1); }
-    50% { transform: scale(1); }
-    100% { transform: scale(0.1); }
+	0% {
+		transform: scale(0.1);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.1);
+	}
 }
+
 @keyframes scale4 {
-    0% { transform: scale(0.1); }
-    50% { transform: scale(1); }
-    100% { transform: scale(0.1); }
+	0% {
+		transform: scale(0.1);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.1);
+	}
 }
+
 @keyframes scale5 {
-    0% { transform: scale(0.1); }
-    50% { transform: scale(1); }
-    100% { transform: scale(0.1); }
+	0% {
+		transform: scale(0.1);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.1);
+	}
+}
+
+#loading {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.load {
+	width:70px;
+	height:70px;
+	border-radius:50%;
+	border:8px solid;
+	margin: 40px;
+}
+
+#load1 {
+	animation: rotate1 1s infinite linear;
+	border:10px solid;
+	border-color:blue transparent;
+}
+
+#load2 {
+	border-color:red red transparent transparent;
+	animation: rotate2 0.5s infinite linear;
+}
+
+#load3 {
+	border-color: green transparent;
+	animation: rotate3 0.5s infinite linear alternate-reverse;
+}
+
+@keyframes rotate1 {
+	0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate2 {
+	0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate3 {
+	0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
 }

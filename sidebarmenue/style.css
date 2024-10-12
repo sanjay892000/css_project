@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./photo.jpg);
+    background-size: cover;
+}
+#check{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: none;
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+.btn_one{
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.main_box{
+    width: 20%;
+    height: 100%;
+}
+.sidebar_menu{
+    position: relative;
+    left: -100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(52, 64, 77);
+    padding-bottom: 30px;
+    transition: all 0.5s ease;
+}
+
+
+.logo{
+    line-height: 70px;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 30px;
+    border-bottom: 1px solid gray;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.btn_two{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+.btn_two i{
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+.menu{
+    margin-top: 20px;
+}
+.menu ul li{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu ul li:hover, .logo:hover{
+    background-color: rgb(40, 45, 52);
+    box-shadow: 0px 2px 5px white;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.social_media{
+    display: flex;
+    justify-content: center;
+} 
+.social_media ul a i{
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+    font-size: 25px;
+    margin: 10px;
+}
+.social_media ul a i:hover{
+    transform: scale(1.079);
+    color: white;
+}
