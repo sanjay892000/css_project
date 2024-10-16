@@ -1,20 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    line-height: 2;
+}
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fffbea;
+    background-color: rgb(164, 193, 202);
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #79a3b1;
-    color: white;
+    background-color: #648d9b;
+    color: rgb(133, 63, 106);
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-family: "Yatra One", system-ui;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+    text-decoration: rgb(133, 63, 106) underline;
 }
 
 main {
@@ -22,19 +33,31 @@ main {
     margin: 20px auto;
 }
 
-.introduction, .ingredients, .instructions {
-    background-color: #f8f8f8;
+main p {
+    text-transform: capitalize;
+}
+
+.introduction,
+.ingredients,
+.instructions {
+    background-color: #ffffff;
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.ingredients h2, .instructions h2 {
+.ingredients h2 {
+    text-decoration: underline;
+}
+
+.ingredients h2,
+.instructions h2 {
     color: #b3568f;
+    text-decoration: underline;
 }
 
-ul, ol {
+ul,
+ol {
     margin-left: 20px;
 }
 

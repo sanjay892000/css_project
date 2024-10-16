@@ -290,18 +290,6 @@ svg text {
 
 section {
 	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-
-button {
-	width: 150px;
-	height: 60px;
-	margin: 30px;
-	background-color: #ece2e2;
-	font-size: 22px;
 }
 
 .animation {
@@ -454,8 +442,57 @@ button {
 	}
 }
 
+#button {
+	width: 150px;
+	height: 70px;
+	margin: 0px auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	overflow: hidden;
+}
+#button::before {
+	content: "";
+	width: 300%;
+	height: 300%;
+	position: absolute;
+	background-image: conic-gradient(transparent,transparent,transparent,red);
+	animation: rotate 4s linear infinite;
+}
+#button::after {
+	content: "";
+	width: 300%;
+	height: 300%;
+	position: absolute;
+	background-image: conic-gradient(transparent,transparent,transparent,red);
+	animation: rotate 4s linear 2s infinite;
+}
+
+@keyframes rotate {
+	0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#button button {
+	position: absolute;
+	inset: 3px;
+	background-color: #0033ff;
+	color: rgb(255, 255, 255);
+	font-size: 22px;
+	z-index: 200;
+	border-radius: 5px;
+}
+
+
 #loading {
-	height: 100vh;
+	height: 50vh;
 	width: 100vw;
 	background-color: rgba(255, 255, 255, 0.5);
 	display: flex;
@@ -464,21 +501,21 @@ button {
 }
 
 .load {
-	width:70px;
-	height:70px;
-	border-radius:50%;
-	border:8px solid;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 8px solid;
 	margin: 40px;
 }
 
 #load1 {
 	animation: rotate1 1s infinite linear;
-	border:10px solid;
-	border-color:blue transparent;
+	border: 10px solid;
+	border-color: blue transparent;
 }
 
 #load2 {
-	border-color:red red transparent transparent;
+	border-color: red red transparent transparent;
 	animation: rotate2 0.5s infinite linear;
 }
 
@@ -489,28 +526,132 @@ button {
 
 @keyframes rotate1 {
 	0% {
-        transform: rotate(0deg);
-    }
+		transform: rotate(0deg);
+	}
 
-    100% {
-        transform: rotate(360deg);
-    }
+	100% {
+		transform: rotate(360deg);
+	}
 }
+
 @keyframes rotate2 {
 	0% {
-        transform: rotate(0deg);
-    }
+		transform: rotate(0deg);
+	}
 
-    100% {
-        transform: rotate(360deg);
-    }
+	100% {
+		transform: rotate(360deg);
+	}
 }
+
 @keyframes rotate3 {
 	0% {
-        transform: rotate(0deg);
-    }
+		transform: rotate(0deg);
+	}
 
-    100% {
-        transform: rotate(180deg);
-    }
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+
+.loader1 {
+	margin: 200px;
+	height: 100px;
+	width: 100px;
+	border: 5px solid;
+	border-color: red transparent transparent transparent;
+	border-radius: 50%;
+	animation: spin 2s linear infinite;
+}
+
+.loader2 {
+	margin-top: 5px;
+	height: 80px;
+	width: 80px;
+	border: 5px solid;
+	border-color: rgb(0, 255, 4) transparent transparent transparent;
+	border-radius: 50%;
+	animation: spin 2s linear infinite;
+}
+
+.loader3 {
+	margin-top: 5px;
+	height: 60px;
+	width: 60px;
+	border: 5px solid;
+	border-color: rgb(0, 4, 255) transparent transparent transparent;
+	border-radius: 50%;
+	animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.glowbox {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	margin: 0px auto;
+}
+
+.scaleBorder {
+	margin: 100px auto;
+	height: 60px;
+	width: 60px;
+	border: 2px solid rgb(255, 0, 0);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 3px 3x 5px black;
+	animation: scalediv 2s linear infinite;
+}
+
+.scale1 {
+	margin: 50px auto;
+	height: 60px;
+	width: 60px;
+	border: 2px solid rgb(255, 0, 0);
+	border-radius: 50%;
+	animation: scalediv 2s linear 1s infinite;
+	position: absolute;
+}
+
+.logo {
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	font-size: 85px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: red;
+}
+
+@keyframes scalediv {
+	0% {
+		transform: scale(1);
+
+	}
+
+	100% {
+		transform: scale(2.5);
+		border-color: transparent;
+	}
+
 }
