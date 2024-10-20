@@ -52,33 +52,33 @@ body{
     border: 3px solid black;
    
 }
-
-#leftbox{
-    transform:rotateY(90deg) translateZ(100px);
-    background: rgba(0, 0, 255, 0.37);
-}
-#rightbox{
-    transform:rotateY(90deg) translateZ(-100px);
-    background-color: rgba(255, 0, 0, 0.306);
-}
-#frontbox{
-    transform:rotateX(90deg) translateZ(100px);
-    background-color: rgba(0, 128, 0, 0.347);
-}
-#backbox{
-    transform:rotateX(90deg) translateZ(-100px);
-    background-color: rgba(255, 255, 0, 0.438);
-}
-
 #topbox{
-    transform: translateZ(100px);
+    transform: translateY(100px) rotateX(90deg);
     background-color: rgba(220, 20, 60, 0.447);
 
 }
-
+#rightbox{
+    transform:translateX(100px) rotateY(90deg) ;
+    background-color: rgba(255, 0, 0, 0.306);
+}
 #bottombox{
-    transform: translateZ(-100px);
+    transform: translateY(-100px) rotateX(90deg);
     background-color: rgba(0, 255, 255, 0.534);
 }
+
+#leftbox{
+    transform: translateX(-100px) rotateY(90deg);
+    background: rgba(0, 0, 255, 0.37);
+}
+#frontbox{
+    transform:translateZ(100px);
+    background-color: rgba(0, 128, 0, 0.347);
+}
+#backbox{
+    transform:translateZ(-100px);
+    background-color: rgba(255, 255, 0, 0.438);
+}
+
+
 
 
