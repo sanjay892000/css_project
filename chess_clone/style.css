@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 .section{
@@ -15,32 +15,23 @@
 }
 
 .ludo-clone{
-    background: rgba(30, 21, 21, 0.4);
     height: 760px;
     width: 760px;
     display: grid;
     grid-template-columns: repeat(8,95px);
-}
-.column{
-    display: grid;
     grid-template-rows: repeat(8,95px);
-    width: auto;
+    border: 15px groove black;
 }
-.white{
-    background-color: rgba(255, 255, 255);
-    color: black;
-}
-.black{
-    background-color: rgba(67, 64, 64);
-    color: white;
-}
-.rows{
-    height: auto;
+.chessbox{
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: contain;
+    font-size: 40px;
 }
-.chess-pawn{
-    height: 75px;
+
+.white{
+    background-color: rgba(255, 255, 255);
+}
+.black{
+    background-color: rgb(51, 48, 36);
 }
