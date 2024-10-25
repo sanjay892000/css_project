@@ -4,6 +4,7 @@
     box-sizing: border-box;
     word-spacing: 1;
     line-height: 2;
+    font-family: sans-serif;
 }
 
 .myHeader {
@@ -251,7 +252,7 @@
     background-image: url(https://www.hanumanttechnology.com/images/featured-service-bg.png);
     background-position: center;
     background-attachment: fixed;
-    height: 700px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -270,7 +271,7 @@
 
 .profilecard {
     height: 260px;
-    width: 400px;
+    width: 28%;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 1px 14px 2px rgba(0, 0, 0, 0.05);
     padding: 30px 30px 20px;
@@ -288,4 +289,14 @@
     color: white;
     padding: 30px;
     border-radius: 50%;
+}
+.profilecard h3{
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+}
+hr{
+    height: 1px;
+    border: none;
+    background-color: #e3e3e3;
 }
