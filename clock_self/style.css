@@ -57,7 +57,7 @@
 .hours{
     height: 25%;
     background-color:gold;
-    animation: rotateh 86400s  linear infinite;
+    animation: rotateh 43200s  linear infinite;
 }
 .point{
     height: 10px;
