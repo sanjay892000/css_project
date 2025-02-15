@@ -45,19 +45,19 @@
 .second{
     height: 35%;
     background-color: rgb(255, 255, 255);
-    animation: rotateS 60s steps(60) infinite;
+    animation: rotate 60s steps(60) infinite;
 }
 
 .minutes{
     height: 30%;
     background-color: rgb(255, 225, 225);
-    animation: rotatem 3600s linear infinite;
+    animation: rotate 3600s linear infinite;
 }
 
 .hours{
     height: 25%;
     background-color:gold;
-    animation: rotateh 43200s  linear infinite;
+    animation: rotate 43200s  linear infinite;
 }
 .point{
     height: 10px;
@@ -67,25 +67,7 @@
     z-index: 5;
 }
 
-@keyframes rotateS {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotatem {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotateh {
+@keyframes rotate {
     0% {
         transform: rotate(0deg);
     }
