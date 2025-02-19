@@ -32,29 +32,12 @@ section{
     background-color: rgb(236, 245, 255);
 }
 
-.ludobox{
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color: rgb(204, 177, 25);
-}
-
-.ludobox i{
-    animation: rotatebox 60s steps(60) infinite;
-}
-
-@keyframes rotatebox{
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
-}
 
 
 .ludoclone{
     display: grid;
-    grid-template-columns: repeat(15, 50px);
-    grid-template-rows: repeat(15,50px);
+    grid-template-columns: repeat(15, 38px);
+    grid-template-rows: repeat(15,38px);
     border: 15px groove rgb(18, 5, 18);
 }
 
@@ -77,6 +60,25 @@ section{
     grid-column: 1/7;
     grid-row: 10/16;
 }
+
+.ludobox{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(204, 177, 25);
+}
+
+.ludobox i{
+    animation: rotatebox 60s steps(60) infinite;
+}
+
+@keyframes rotatebox{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
 .box{
     height: 75%;
     width: 75%;
