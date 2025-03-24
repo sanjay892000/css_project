@@ -1,0 +1,361 @@
+.box {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
+  animation-name: movebox;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  position: relative;
+}
+
+@keyframes movebox {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+  25% {
+    top: 0;
+    left: 200px;
+    background-color: blue;
+    transform: rotate(1turn);
+  }
+  50% {
+    top: 200px;
+    left: 200px;
+    background-color: rgb(255, 0, 238);
+    transform: rotate(2turn);
+    border-radius: 50%;
+  }
+  75% {
+    top: 200px;
+    left: 0;
+    background-color: yellow;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+
+.child{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  animation-name: childAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes childAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(800px) rotate(2turn);
+    background-color: red;
+    border-radius: 50%;
+  }
+  100% {
+    transform:translateX(0px);
+  }
+}
+
+#loader-section{
+  padding: 100px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  background-color: rgb(209, 255, 255);
+  box-shadow: 0px 0px 5px black;
+}
+
+
+.loader{
+  height: 100px;
+  width: 100px;
+  border: 10px solid;
+  border-color: blue transparent;
+  border-radius: 50%;
+  animation: loaderbox 1s linear infinite;
+}
+.loader1{
+  height: 100px;
+  width: 100px;
+  border: 10px solid;
+  border-color: blue blue transparent blue;
+  border-radius: 50%;
+  animation: loaderbox 0.5s linear infinite;
+}
+.loader2{
+  height: 100px;
+  width: 100px;
+  border: 10px solid;
+  border-color: rgb(51, 255, 0) transparent;
+  border-radius: 50%;
+  animation: loaderbox2 0.5s linear infinite alternate;
+}
+
+@keyframes loaderbox {
+ from{
+  transform: rotate(0deg);
+ }
+ to{
+  transform: rotate(360deg);
+ }
+}
+
+
+@keyframes loaderbox2{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(180deg);
+  }
+}
+
+#process, #loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.mybox{
+  height: 50px;
+  width: 8px;
+}
+#mybox1{
+  background-color: red;
+  animation: process 0.5s linear infinite alternate;
+}
+#mybox2{
+  background-color: rgb(4, 0, 255);
+  animation: process 0.5s linear 0.2s infinite alternate;
+}
+#mybox3{
+  background-color: rgb(0, 255, 42);
+  animation: process 0.5s linear 0.4s infinite alternate;
+}
+#mybox4{
+  background-color: rgb(255, 0, 212);
+  animation: process 0.5s linear 0.6s infinite alternate;
+}
+#mybox5{
+  background-color: rgb(255, 123, 0);
+  animation: process 0.5s linear 0.8s infinite alternate;
+}
+
+@keyframes process{
+  0%{
+    transform: scaleY(0.3);
+  }
+  100%{
+    transform: scaleY(2);
+  }
+
+}
+
+
+.myloader{
+  height: 150px;
+  width: 150px;
+  border: 8px solid;
+  border-color: red transparent transparent transparent;
+  border-radius: 50%;
+  animation: rotateloader 2s linear infinite;
+}
+
+.childloader{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: green transparent transparent transparent;
+  margin-top: 10px;
+  animation: rotateloader 2s linear infinite;
+}
+.subchild{
+  height: 90px;
+  width: 90px;
+  border: 8px solid;
+  border-color: blue transparent transparent transparent;
+  margin-top: 10px;
+  border-radius: 50%;
+  animation: rotateloader 2s linear infinite;
+}
+
+@keyframes rotateloader{
+
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+
+
+
+#effect-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  padding: 100px 40px;
+}
+
+.mycards{
+  height: 300px;
+  width: 300px;
+  background-image: url(https://www.hanumanttechnology.com/services_img/mern-stack-course-and-training.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+  position: relative;
+}
+.mycards h1{
+  text-transform: capitalize;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  
+}
+.myitems{
+  background-color: rgba(8, 8, 118, 0.733);
+  position: absolute;
+  inset: 30px;
+  transform: rotateY(90deg) translateX(-100px);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  transition: all 0.2s linear;
+}
+.mycards:hover .myitems{
+  transform: rotateY(0deg) translateX(0px);
+}
+.mycards:hover>h1{
+ display: none;
+}
+
+.ylogo {
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.center {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  position: relative;
+  left: 8px;
+}
+
+.circle {
+  height: 100%;
+  width: 100%;
+  border: 5px solid red;
+  position: absolute;
+  border-radius: 50%;
+}
+#box1 {
+  animation: scalebox 2s linear infinite;
+}
+#box2 {
+  animation: scalebox 2s linear 1s infinite;
+}
+@keyframes scalebox {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.container {
+  height: 250px;
+  width: 250px;
+  background-color: rgb(242, 237, 237);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 15px black;
+}
+.mylogo {
+  height: 80px;
+  width: 80px;
+  background-color: gold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+.mylogo i {
+  font-size: 35px;
+  color: white;
+}
+
+.container p {
+ line-height: 2;
+}
+
+.container:hover {
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+  color: white;
+  background-color: rgb(12, 75, 72);
+}
+
+.logoeffect{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.103);
+    position: absolute;
+}
+
+.container:hover > .mylogo > .logoeffect {
+    animation: scalelogo 1s linear 2;
+}
+
+@keyframes scalelogo {
+    
+    0%{
+    box-shadow: 0px 0px 15px white;
+    transform: scale(1);
+}
+100%{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 15px white;
+}
+
+}
