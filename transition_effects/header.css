@@ -31,7 +31,7 @@
     gap: 10px;
   }
   
-  .navbar>h1 {
+  .navitems {
     text-decoration: none;
     border: 2px solid black;
     padding: 10px 15px;
@@ -43,7 +43,7 @@
     overflow: hidden;
   }
   
-  .navbar>h1>a {
+  .navitems>a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -51,7 +51,7 @@
     z-index: 55;
   }
   
-  .navbar>h1::after {
+  #navitems1::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -62,12 +62,57 @@
     transition: all 0.3s ease;
   }
   
-  .navbar>h1:hover::after {
+  #navitems1:hover::after {
     top: 0;
     border-radius: 5px;
   }
+  #navitems2::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: rgb(179, 0, 134);
+    border-radius: 0% 50% 50% 0%;
+    left: 50%;
+    transition: all 0.3s ease;
+  }
   
-  .navbar>h1:hover a {
+  #navitems2:hover::after {
+    width: 50%;
+    border-radius: 0% 5px 5px 0%;
+  }
+  #navitems2::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: rgb(0, 10, 147);
+    border-radius: 50% 0% 0% 50%;
+    right: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  #navitems2:hover::before {
+    width: 50%;
+    border-radius: 5px 0px 0px 5px;
+  }
+  #navitems3::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: rgb(0, 0, 0);
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  #navitems3:hover::before {
+    width: 100%;
+    border-radius: 0% 50% 50% 0%;
+    border-radius: 0% 5px 5px 0%;
+  }
+  
+  .navitems:hover a {
     color: white;
   }
   
