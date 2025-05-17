@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    background: #ffffff;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    animation: navbar 1s ease;
+}
+
+#navbar2{
+    background-color: rgb(235, 232, 232);
+    box-shadow: 0px 0px 15px black;
+    position: fixed;
+    display: none;
+    z-index: 100;
+}
+
+
+@keyframes navbar{
+    from {
+        top: -60px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+
+}
+
+header img{
+    width: 170px;
+}
+.head{
+    display: flex;
+}
+
+.head li{
+    font-weight: 700;
+    list-style-type: none;
+    
+}
+
+.head li a{
+    margin: 0px 15px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+.training-class{
+    display:flex ;
+    flex-direction: column;
+    width: 120px;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    height: 220px;
+    display: none;
+}
+#training:hover ul.training-class{
+    display: block;
+    color: black;
+    height: 220px;
+    text-align: center;
+}
+
+
+
+.section{
+    background-image: url(https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/it-banner-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+}
+
+.about{
+    width: 65%;
+    color: white;
+    font-weight: 700;
+    padding: 100px 50px;
+    line-height: 2;
+}
+
+@keyframes heading{
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+    
+}
+.about h1{
+    position: relative;
+    margin-bottom: 10px;
+    position: relative;
+    animation: heading 1s ease;
+}
+
+.para1{
+    position: relative;
+    animation: para1 1.5s ease;
+}
+@keyframes para1{
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+    
+    
+}
+.para2{
+    position: relative;
+    animation: para1 2s ease;
+}
+@keyframes para2{
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.about h1::after{
+    position: absolute;
+    content: " ";
+    width: 85%;
+    height: 3px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+
+}
+
+.overflow{
+    height: 200px;
+    width: 300px;
+    overflow: auto;
+    padding: 10px;
+    margin: auto;
+}
+.about-page{
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-side{
+    width: 40%;
+    height: 70%;
+    position: relative;
+}
+.image-about{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.image-about img{
+    height: 100%;
+    width: 100%;
+}
+
+.about-card{
+    position: absolute;
+    top: -36px;
+    right: 0px;
+}
+.card{
+    height: 130px;
+    width: 230px;
+    background: rgb(244,189,1);
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 5px;
+}
+
+.card i{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+#card{
+    background-color: black;
+}
+#card:hover{
+    background-color: rgb(244,189,1);
+}
+
+
+
+
+.right-side{
+    width: 48%;
+    height: 80%;
+    padding: 20px;
+}
+.right-side h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.right-side p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    text-align: justify;
+}
+
+
+#contact-container{
+    display: flex;
+}
+
+.contact-image{
+    width: 50%;
+    padding: 80px 50px;
+    background: url('https://www.hanumanttechnology.com/images/partition-bg2.jpg');
+    background-size: cover;
+}
+.contact-article{
+    width: 50%;
+    padding:50px;
+    background: url('https://www.hanumanttechnology.com/images/partition-bg1.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.contact-article h1{
+    font-size: 35px;
+}
+
+.contact-article p{
+    margin: 20px 0px;
+    word-spacing: 5px;
+    line-height: 1.5;
+}
+
+.contact-article button{
+    padding: 10px 35px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #FF5421;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.contact-article button:hover{
+    background-color: white;
+    color: black;
+}
